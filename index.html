@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Indie+Flower&family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-link" href="#about-artist">Om kunstner</a>
+           <a class="nav-link" href="#carousel">Billeder</a>
+            <a class="nav-link social-item" href="https://www.instagram.com/gapchinska/">Instagram</a>
+            <a class="nav-link social-item" href="https://www.youtube.com/watch?v=fTKTQd_9Vm8">Youtube</a>
+        </nav>
+    </header>
+    <section class="hero">
+            <h1>Gapchynska</h1>
+
+    </section>
+    <div class="container">
+    <article id="about-artist" class="about">
+<div class="left-side">
+    <div class="first-text-bg">
+    <p class="first-text">
+       <span class="artist-name">Eugenia Gapchinska</span> er en kunstner, der kalder sig selv "den største leverandør af lykke" i sit land, Ukraine. 
+    </p>
+</div>
+<div class="second-circle">
+<div class="second-text-bg">
+        <p class="second-text">
+            <span class="artist-name">Hun</span> udråbte sig selv med dette kælenavn, fordi hendes vigtigste mening om enhver form for kunst, især billedkunst, er, at den ikke er lavet for at repræsentere og sprede lykke og velvære.
+        </p>
+    </div>
+    <div class="third-circle">
+    <div class="third-text-bg">
+    <p class="second-text">
+        <span class="artist-name">Evgenia</span> er 38 år, født i Kharkiv i en militærfamilie.
+        Efter ottende klasse gik han ind i Kunstskole de Kharkov i afdelingen for "lærer i Kunstskole for Børn", hvorfra han dimitterede med udmærkelse.
+    </p> 
+</div> 
+</div>
+</div>
+</div>
+<div class="right-side">
+    <div class="artist-bg">
+    <img class="artist-photo" src="./images/gapchynska.jpeg" alt="Eugenia Gapchunska">
+</div>
+</div>
+    </article>
+    <section class="gallery">
+    <div id="carousel" class="carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+            <img src="./icons/circle-left.svg" alt="">
+        </button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current-slide">
+                    <img class="carousel-image" src="./images/baron.jpeg" alt="Baron Munchausen">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/frida.jpeg" alt="Frida Kahlo">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/love.jpeg" alt="A girl with love">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/love1.jpeg" alt="Two in love"></li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/marylyn.jpeg" alt="Marilyn Monroe">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" 
+                    src="./images/ukrainian.jpeg" 
+                    alt="An ukrainian girl"></li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/weekend.jpeg" alt="A weekend"></li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/women.jpeg" alt="Two women with cucumbers"></li>
+                <li class="carousel_slide">
+                    <img class="carousel-image" src="./images/yoga.jpeg" alt="Yoga"></li>
+            
+            </ul>
+        </div>
+        <button class="carousel_button carousel_button--right">
+            <img src="./icons/circle-right.svg" alt="">
+        </button>
+    </div>
+    <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+    </div>
+</section>
+<p id="demo"></p>
+  </div>
+
+<script>
+const d = new Date();
+let text = d.toLocaleString();
+document.getElementById("demo").innerHTML = text;
+</script>
+<script src="./carousel.js"></script>
+
+</body>
+</html>
